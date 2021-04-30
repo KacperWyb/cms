@@ -71,7 +71,7 @@ ga('set', 'metric1', metricValue);
 				$Udana_Walidacja=false;
 				$_SESSION['blad_email'] = "Podaj poprawny adres E-Mail";
 			}
-			
+			/*
 			//bot or not
 			$sekret = "6LdKsq8ZAAAAAPDufixK5sNmnkxdJf5_aegzvm1m";
 			
@@ -82,7 +82,7 @@ ga('set', 'metric1', metricValue);
 			{
 				$Udana_Walidacja = false;
 				$_SESSION['error_bot'] = "Potwierdź, że nie jesteś robotem!";
-			}
+			}*/
 			
 			//zapamietaj dane
 			$_SESSION['email'] = $_POST['email'];
@@ -136,14 +136,15 @@ ga('set', 'metric1', metricValue);
 							}
 						?></textarea></br></br>
 						
-						<div class="g-recaptcha" data-sitekey="6LdKsq8ZAAAAAOxVPLkjp3ET53Vz6aXbDmo40Xx_"></div>
+						<!--<div class="g-recaptcha" data-sitekey="6LdKsq8ZAAAAAOxVPLkjp3ET53Vz6aXbDmo40Xx_"></div>-->
 			
 						<?php
+						/*
 							if(isset($_SESSION['error_bot']))
 							{
 								echo '<div class="error">'.$_SESSION['error_bot'].'</div>';
 								unset($_SESSION['error_bot']);
-							}
+							}*/
 						?>
 						<input type="Submit" value="Wyślij Pytanie!">
 					</form>
